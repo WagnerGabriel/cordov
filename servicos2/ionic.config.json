@@ -1,0 +1,7 @@
+{
+  "name": "servicos2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

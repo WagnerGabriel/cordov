@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Sócio torcedor</ion-title>
+  </ion-toolbar>
+ 
+</ion-header>
+<ion-content padding>
+    SEJA SÓCIO POR APENAS R$15,00
+   <h1> E veja seus Beneficios</h1>
+  <form [formGroup] = 'formCliente' (submit) = 'login()'>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input type="text" formControlName="nome" name="nome" id="nome" clearOnEdit  placeholder="digite o nome" ></ion-input>
+    </ion-item> 
+    <span *ngIf="errorNome">{{messageNome}}</span>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email" name="email" id="email" formControlName="email" clearOnEdit  placeholder="digite o email" min="2" maxlenght="100"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-label>Endereço</ion-label>
+      <ion-input type="text" name="endereco" id="endereco" formControlName="endereco" clearOnEdit  placeholder="digite o endereco" min="2" maxlenght="100"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Senha</ion-label>
+      <ion-input type="password" name="senha" id="senha" formControlName="senha" clearOnEdit  placeholder="digite a senha" min="2" maxlenght="100"></ion-input>
+    </ion-item>
+    <span *ngIf="errorPassword">{{messageSenha}}</span>
+    <ion-item>
+        <ion-button type="submit" shape="round">ENVIAR</ion-button> 
+    
+    </ion-item> 
+  </form>
+</ion-content>
