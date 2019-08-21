@@ -3,7 +3,7 @@
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title>Sócio torcedor</ion-title>
+      <ion-title> Cadastro de Sócio torcedor</ion-title>
   </ion-toolbar>
  
 </ion-header>
@@ -33,5 +33,28 @@
         <ion-button type="submit" shape="round">ENVIAR</ion-button> 
     
     </ion-item> 
-  </form>
+    
+</form>
+
 </ion-content>
+
+<!--<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Matricula</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let clientes of cliente">
+          <th class="ion-text-center" scope="row">{{ clientes.id }}</th>
+          <td class="ion-text-center">{{ clientes.nome }}</td>
+          <td class="ion-text-center">{{ clientes.endereco }}</td>
+          <td class="ion-text-center">{{ clientes.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
