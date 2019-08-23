@@ -29,7 +29,7 @@ export class ClienteService {
     return this.http.get<Cliente[]>(`${API_URL}/cliente?matricula`, httpOptions);
   }
   //
-  getAlunos() {
+  getClientes() {
     return this.http.get<Cliente[]>(`${API_URL}/cliente`, httpOptions);
   }
   

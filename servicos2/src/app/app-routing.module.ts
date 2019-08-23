@@ -16,7 +16,8 @@ const routes: Routes = [
   { path: 'trofeu', loadChildren: './cliente/cliente.module#ClientePageModule' },
   { path: 'vou-tentar', loadChildren: './profissional/profissional.module#ProfissionalPageModule' },
   { path: 'sucesso', loadChildren: './sucesso/sucesso.module#SucessoPageModule' },
-  { path: 'museu', loadChildren: './museu/museu.module#MuseuPageModule' },
+  { path: 'museu', loadChildren: './museu/museu.module#MuseuPageModule' },  { path: 'listar', loadChildren: './listar/listar.module#ListarPageModule' },
+
 
   
 

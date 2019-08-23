@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,11 @@ export class AppComponent {
       title: 'museu',
       url: '/museu',
       icon: 'trophy'
+    },
+    {
+      title:'Dados Cliente',
+      url: '/listar',
+      icon: 'list-box'
     }
   ];
 
