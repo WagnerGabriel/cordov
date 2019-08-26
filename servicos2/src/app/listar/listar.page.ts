@@ -27,7 +27,7 @@ export class ListarPage implements OnInit {
   listaCliente() {
     this.clienteService.getClientes().subscribe(
     clienteDB => this.cliente = clienteDB,
-    erroDB => console.log(erroDB)
+    erroDB => console.log (erroDB)
   );
 
 
