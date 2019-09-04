@@ -1,8 +1,8 @@
 export interface Cliente{
 
-    cemail: string,
-    cnome: string,
-    cendereco: string,
-    csenha: string
+    email: string,
+    nome: string,
+    endereco: string,
+    senha: string
     
 }

@@ -14,7 +14,7 @@ import { ClienteService } from '../service/cliente.service';
 export class ListarPage implements OnInit {
 
   
-  private cliente: Cliente[];
+  private clientes: Cliente[];
 
   constructor(private clienteService: ClienteService,
     private router: Router) {}
@@ -24,9 +24,10 @@ export class ListarPage implements OnInit {
   ngOnInit(): void {
     this.listaCliente();
   }
+  
   listaCliente() {
     this.clienteService.getClientes().subscribe(
-    clienteDB => this.cliente = clienteDB,
+    clienteDB => this.clientes = clienteDB,
     erroDB => console.log (erroDB)
   );
 

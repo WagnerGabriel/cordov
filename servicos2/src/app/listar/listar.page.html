@@ -1,34 +1,63 @@
 
 <ion-header>
-    <ion-toolbar>
-      <ion-title>
-       Dados cliente
-      </ion-title>
-    </ion-toolbar>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Dados cliente</ion-title>
+</ion-toolbar>
     
     
   </ion-header>
-  
+  <ion-content fullscreen>
+      <ion-list-header></ion-list-header>
+      <ion-thumbnail class="ion-margin-start">
+        <img src="./thumbnail.svg">
+      </ion-thumbnail>
   <ion-content padding>
     <div class="container">
-      <table >
-        <thead>
-          <tr>      
-            <th >Nome</th>
-            <th >Email</th>
-            <th >Endereço</th>
-            <th >Senha</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let c of cliente">
-            <td align-self-baseline>{{ c.nome }}</td>
-            <td align-self-baseline>{{ c.email }}</td>
-            <td align-self-baseline>{{ c.endereco }}</td>
-            <td align-self-baseline>{{ c.senha }}</td>
-          </tr>
-        </tbody>
-      </table>
+        <ion-item>
+            <ion-thumbnail slot="start">
+              <tr>
+                  <ion-list></ion-list>
+                  <th >Nome: </th>
+            </ion-thumbnail>
+            <ion-label></ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <tr>
+                  <ion-list></ion-list>
+                  <th >Email:</th>
+            </ion-thumbnail>
+            <ion-label></ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail slot="start">
+                <tr>
+                    <ion-list></ion-list>
+                    <th >Endereço</th>
+              </ion-thumbnail>
+              <ion-label></ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail slot="start">
+                  <tr>
+                      <ion-list></ion-list>
+                      <th >Senha</th>
+                </ion-thumbnail>
+                <ion-label></ion-label>
+              </ion-item>
+      
+    </div>
+    <div *ngFor="let cliente of clientes">
+      <h1>{{cliente.nome}}</h1>
+        <p>Nome: {{ cliente.nome }}</p>
+        <p>Email: {{ cliente.email }}</p>
+        <p>Endereço: {{ cliente.endereco }}</p>                     
+    </div>
+    <div>
+      qualquer coisa: {{cliente}}
     </div>
   </ion-content>
     

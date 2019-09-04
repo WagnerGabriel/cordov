@@ -64,7 +64,7 @@ export class ClientePage implements OnInit {
         [
           Validators.required,
           Validators.minLength(5),
-          Validators.maxLength(5),
+          Validators.maxLength(20),
         ]
       ]
     })
