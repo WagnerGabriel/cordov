@@ -4,5 +4,6 @@ export interface Cliente{
     nome: string,
     endereco: string,
     senha: string
+    gsghdhxx
     
 }
