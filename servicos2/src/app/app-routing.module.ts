@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'vou-tentar', loadChildren: './profissional/profissional.module#ProfissionalPageModule' },
   { path: 'sucesso', loadChildren: './sucesso/sucesso.module#SucessoPageModule' },
   { path: 'museu', loadChildren: './museu/museu.module#MuseuPageModule' },  { path: 'listar', loadChildren: './listar/listar.module#ListarPageModule' },
+  { path: 'ingresso', loadChildren: './ingresso/ingresso.module#IngressoPageModule' },
 
 
   
