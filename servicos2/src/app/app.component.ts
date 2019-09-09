@@ -28,6 +28,11 @@ export class AppComponent {
       icon: 'trophy'
     },
     {
+      title: 'produtos',
+      url: '/produtos',
+      icon: 'trophy'
+    },
+    {
       title:'Dados Cliente',
       url: '/listar',
       icon: 'list-box'

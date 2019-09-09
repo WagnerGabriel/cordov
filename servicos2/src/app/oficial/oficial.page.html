@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>oficial</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <form [formGroup]= 'formoficial' (submit) ='add()'>
+        Cadastra-se e veja seus Beneficios
+        <ion-item>
+        <ion-label>Nome</ion-label>
+          <ion-input type="text" formControlName="nome" name="nome" id="nome" clearOnEdit  placeholder="digite o nome" ></ion-input>
+        </ion-item> 
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input type="email"  name="email" id="email" formControlName="email" clearOnEdit  placeholder="digite o email" min="2" maxlenght="100"></ion-input>
+        </ion-item> 
+        <ion-item>
+          <ion-label>Endereço</ion-label>
+          <ion-input type="text"  name="endereco" id="endereco" formControlName="endereco" clearOnEdit  placeholder="digite o endereco" min="2" maxlenght="100"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Senha</ion-label>
+          <ion-input type="password"  name="senha" id="senha" formControlName="senha" clearOnEdit  placeholder="digite a senha" min="2" maxlenght="100"></ion-input>
+        </ion-item>
+        <ion-item>
+          <button [disabled]="formoficial.invalid" class="btn btn-block btn-dark btn-lg" type="submit">Enviar</button>    
+        </ion-item> 
+      </form>
+</ion-content>
