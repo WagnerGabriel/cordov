@@ -1,21 +1,38 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button></ion-menu-button>  
     </ion-buttons>
     <ion-title>
-      Home
+    FC.BARCELONA
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <ion-card class="welcome-card">
-      <img src="/assets/icon/barca.jpg " alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Barcelona FCB</ion-card-subtitle>
-        <ion-card-title>Mais que um clube</ion-card-title>
-      </ion-card-header>
+      <ion-slides>
+
+        
+        <ion-slide>
+          <img src="/assets/icon/barca1.jpg " alt="">
+          
+        </ion-slide>
+
+        <ion-slide>
+          <img src="./slide-3.png"/>
+          <h2>What is Ionic Pro?</h2>
+          <p><b>Ionic Pro</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="./slide-4.png"/>
+          <h2>Ready to Play?</h2>
+          <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        </ion-slide>
+
+      </ion-slides>
+      
       <ion-card-content>
         <p>LOJA DE ARTIGOS ESPORTIVOS</p>
         
@@ -29,7 +46,7 @@
   
       <ion-item href="museu">
         <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Museu</ion-label>
+        <ion-label>Produtos</ion-label>
       </ion-item>
       <ion-item href="trofeu">
         <ion-icon slot="start" color="medium" name="grid"></ion-icon>
@@ -39,6 +56,9 @@
         <ion-icon slot="start" color="medium" name="grid"></ion-icon>
         <ion-label>Produtos</ion-label>
       </ion-item>
-    
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
     </ion-list>
+   
 </ion-content>
